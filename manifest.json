@@ -1,0 +1,22 @@
+{
+  "name": "Shut up Github - Alt + Shift + A",
+  "version": "0.3",
+  "description": "Creates a keyboard shortcut (Alt + Shift + A) to shut up Github annotations",
+  "background": {
+    "persistent": false,
+    "scripts": ["background.js"]
+  },
+  "commands": {
+    "toggle-annotations": {
+      "suggested_key": { "default": "Alt+Shift+A" },
+      "description": "Toggle annotations"
+    }
+  },
+  "permissions": [
+    "tabs",
+    "notifications",
+    "http://*.github.com/",
+    "https://*.github.com/"
+  ],
+  "manifest_version": 2
+}
